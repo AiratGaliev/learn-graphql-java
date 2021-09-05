@@ -1,0 +1,6 @@
+schema{
+    query: Query
+}
+type Query {
+    bankAccount(id:ID): BankAccount
+}

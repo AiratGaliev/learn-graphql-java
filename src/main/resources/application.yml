@@ -1,9 +1,11 @@
 spring:
   application:
     name: learn-graphql-java
+
 server:
   http2:
     enabled: true
+
 graphql:
   servlet:
     max-query-depth: 5
@@ -12,5 +14,6 @@ graphql:
       Authorization: Bearer TOKEN
     tabs:
       - name: Bank account sample query
-        query: classpath:playground/bank_account.graphqls
-        variables: classpath:playground/bank_account_variables.graphqls
+        query: classpath:playground/bank_account.graphql
+        variables: classpath:playground/bank_account_variables.json
+    enabled: true
